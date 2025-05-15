@@ -2,4 +2,4 @@
 
 MOVIES=("court "vijay" "majjiga" "badri")
 
-echo "Frist Movie: ${MOVIES[1]}"
+echo "Frist Movie: $MOVIES[1]"
