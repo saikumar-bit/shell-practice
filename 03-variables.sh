@@ -3,7 +3,7 @@
 PERSON1=vijju
 PERSON1=majju
 
-echo "$PERSON=1":: hi $PERSON=2
-echo "$PERSON=2":: hi $PERSON=1, how are you?
-echo "$PERSON=1":: fine $PERSON=2, what about you? $PERSON=2
-echo "$PERSON=2":: same here also $PERSON=1
+echo "$PERSON1":: hi $$PERSON2
+echo "$PERSON2":: hi $PERSON1, how are you?
+echo "$PERSON1":: fine $$PERSON2, what about you? $$PERSON2
+echo "$$PERSON2":: same here also $PERSON1
