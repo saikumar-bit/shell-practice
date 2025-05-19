@@ -32,7 +32,7 @@ fi
 }
 
 dnf list installed mysql &>>$LOGS_FILE
-if [$? -ne 0 ]
+if [ $? -ne 0 ]
 then
    echo "MYSQL is not installed... going to install it" &>>$LOGS_FILE
    dnf install mysql -y &>>$LOGS_FILE
@@ -42,7 +42,7 @@ else
 fi
 
 dnf list installed python3 &>>$LOGS_FILE
-if [$? -ne 0 ]
+if [ $? -ne 0 ]
 then
    echo "python3 is not installed... going to install it" &>>$LOGS_FILE
    dnf install python3 -y &>>$LOGS_FILE
@@ -52,7 +52,7 @@ else
 fi
 
 dnf list installed nginx &>>$LOGS_FILE
-if [$? -ne 0 ]
+if [ $? -ne 0 ]
 then
    echo "nginx is not installed... going to install it" &>>$LOGS_FILE
    dnf install nginx -y &>>$LOGS_FILE
